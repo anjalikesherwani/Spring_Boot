@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+	<style>
+	table, th, td {
+	  border:1px solid black;
+	}
+	</style>
+	<body>
+
+	<h2>A basic HTML table</h2>
+
+	<table style="width:100%">
+	  <tr>
+	    <th>ID</th>
+	    <th>First Name</th>
+	    <th>Last Name</th>
+		<th>E-Mail</th>
+		<th>Password</th>
+		<th>Confirm Password</th>
+	  </tr>
+	  <tr>
+		<td th:text="${id}"></td>
+	    <td th:text="${fname}"></td>
+	    <td th:text="${lname}"></td>
+	    <td th:text="${mail}"></td>
+		<td th:text="${password}"></td>
+		<td th:text="${Cpassword}"></td>
+		<!--<td th:text="${key}"></td>-->
+	  </tr>
+	
+	</table>
+
+<h2> Registered </h2>
+
+</body>
+</html>
