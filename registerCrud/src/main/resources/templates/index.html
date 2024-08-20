@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+	
+		<meta charset="UTF-8">
+		   
+		    <link rel="stylesheet" href="/css/style.css">
+		   
+	</head>
+	
+<body>
+
+
+<h2>DashBoard</h2>
+
+<a href="/register">Register User</a>
+
+
+</body>
+<table>
+	<tr>
+		<th>ID</th>
+		<th>Name</th>
+		<th>E-Mail</th>
+		<th>Password</th>
+		<th>Comfirm Password</th>
+		<th>Phone</th>
+		<th>D.O.B</th>
+		<th>Gender</th>
+		<th>Action</th>
+	</tr>
+	<tr th:each="u:$data">
+		<td th:text="${u.id}"></td>
+		<td th:text="${u.name}"></td>
+		<td th:text="${u.mail}"></td>
+		<td th:text="${u.password}"></td>
+		<td th:text="${u.Cpassword}"></td>
+		<td th:text="${u.phone}"></td>
+		<td th:text="${u.dob}"></td>
+		<td th:text="${u.gender}"></td>
+		<td>
+			 <a th:href="@{/updateForm/{/id}(id=${u.id})}">Update</a> | 
+			 <a th:href="@{/deleteUser/{/id}(id=${u.id})}">Delete</a></td>
+		
+		
+	</tr>
+</table>
+
+</html>
