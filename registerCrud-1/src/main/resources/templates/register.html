@@ -1,0 +1,33 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<style>
+body{
+ background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKS03NyUDRZ8LCOOX8o92dvCoyWFqo_m_5Cg&s");
+ background-repeat:no-repeat;
+ background-size:100%;
+ text-align:center;
+}
+h1{
+ font-size:30px;
+ text-decoration:underline;
+}
+
+</style>
+</head>
+<body>
+<h1>Register Here..</h1>
+<form action="/saveUser" method="post">
+Name: <input type="text" name="name"/><br><br>
+Email: <input type="text" name="mail"/><br><br>
+Phone: <input type="text" name="phone"/><br><br>
+Dob: <input type="date" name="dob"/><br><br>
+Password: <input type="text" name="passwd"/><br><br>
+Confirm Password: <input type="text" name="cpasswd"><br><br>
+<input type="submit" name="submit" value="register"/><br><br>
+
+
+</form>
+
+
+</body>
+</html>
