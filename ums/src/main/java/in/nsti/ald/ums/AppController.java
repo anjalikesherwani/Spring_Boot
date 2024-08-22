@@ -3,6 +3,8 @@ package in.nsti.ald.ums;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 
+import jakarta.servlet.http.HttpServletRequest;
+
 @Controller
 public class AppController {
 	@GetMapping("/")
@@ -33,6 +35,25 @@ public class AppController {
 	@GetMapping("/Login")
 	public String Login() {
 		return "Login";
+	}
+	
+	@GetMapping("/fees")
+	public String fees() {
+		return "fees";
+	}
+	
+	@GetMapping("/myprogreess")
+	public String myprogreess() {
+		return "myprogreess";
+	}
+	@GetMapping("/result")
+	public String result() {
+		return "result";
+	}
+	
+	@GetMapping("/student_afterlogin")
+	public String student_afterlogin() {
+		return "student_afterlogin";
 	}
 	
 }
