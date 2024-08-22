@@ -30,4 +30,9 @@ public class AppController {
 		return "testimonial";
 	}
 	
+	@GetMapping("/Login")
+	public String Login() {
+		return "Login";
+	}
+	
 }
